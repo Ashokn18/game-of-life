@@ -25,6 +25,7 @@ pipeline{
 					steps {
 						dir ('/mnt/docker'){
 						sh "chmod -R 777 gameoflife.war"
+							sleep 5
 						sh "docker build -t mytomcat ."
 						}
 						}
