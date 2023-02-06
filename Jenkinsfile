@@ -18,7 +18,6 @@ pipeline{
 				stage ('diploy war') {
 					steps {
 						sh "cp -r /mnt/git-project/gameoflife-web/target/gameoflife.war /mnt/docker"
-						sleep 5
 						}
 					}
 					
